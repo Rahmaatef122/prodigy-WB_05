@@ -1,0 +1,18 @@
+﻿@page
+@model weather.Pages.weatherModel
+@{
+}
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+        <input type="text" id="locationInput" placeholder="Enter a location" />
+        <button onclick="getWeatherByInput()">Get Weather</button>
+        <button onclick="getWeatherByLocation()">Use My Location</button>
+
+        <div id="weatherInfo" class="weather-info">
+            <!-- Weather data will be displayed here -->
+        </div>
+    </div>
+
+    <script src="site.js"></script> <!-- Link to JavaScript file -->
+</body>
